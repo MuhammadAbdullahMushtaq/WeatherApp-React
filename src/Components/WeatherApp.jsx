@@ -13,7 +13,7 @@ const WeatherApp = () => {
     .catch((err) => {
         console.log("0rrr", err);
       });
-  }, [cityName]);
+  }, [searchCityState]);
   
   const searchCity = (e) => {
     setSearchCityState(cityName);
