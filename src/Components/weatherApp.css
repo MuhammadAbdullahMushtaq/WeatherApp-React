@@ -1,0 +1,39 @@
+.media{
+   width: 50% !important;
+}
+.listBox {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.listBox li{
+   width: 250px;
+   list-style: none;
+   background-color: grey;
+   padding: 15px;
+   color: white;
+   font-weight: bold;
+   font-size: 22px;
+   border-radius: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+   .media{
+      width: 80% !important;
+   }
+   h1{
+      font-size: 30px !important;
+   }
+   .listBox {
+      flex-direction: column;
+   }
+   .listBox li {
+     font-size: 18px;
+     width: 200px;
+     padding: 10px;
+     margin-top: 10px;
+   }
+}
