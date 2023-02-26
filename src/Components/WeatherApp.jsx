@@ -48,8 +48,13 @@ const WeatherApp = () => {
   }, [searchCityState, locationCity]);
 
   const searchCity = (e) => {
-    setSearchCityState(cityName);
-    setLocationCity({});
+    if(cityName === ''){
+      alert('Enter City')
+    }
+    else{
+      setSearchCityState(cityName);
+      setLocationCity({});
+    }
   };
 
   return (
